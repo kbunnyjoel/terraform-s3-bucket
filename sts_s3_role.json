@@ -4,7 +4,7 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "Service": "ec2.amazonaws.com"  // This allows EC2 instances to assume the role
+                "Service": "ec2.amazonaws.com"
             },
             "Action": "sts:AssumeRole"
         }
