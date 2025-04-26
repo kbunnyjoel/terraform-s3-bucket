@@ -10,8 +10,8 @@
                 "s3:DeleteObject"
             ],
         "Resource": [
-                "aws_s3_bucket.my_bucket.arn",
-                "${aws_s3_bucket.my_bucket.arn}/*"
+                "arn:aws:s3:::${local.bucket_name}/*",
+                "arn:aws:s3:::${local.bucket_name}"
             ]
         }
     ]
