@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = var.bucket_name
+  bucket = local.bucket_name
   acl    = "private"
 
   versioning {
